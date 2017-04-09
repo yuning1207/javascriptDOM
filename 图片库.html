@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Good Food!!!</title>
+        <style>
+            body{background-color:#ddd;color:black;}
+            h1{color:#FF6600;}
+            a:link {color:#505050;text-decoration:none;font-size:1.5em;}  
+            a:hover {color:#FF00FF;text-decoration:underline;font-size:1.5em;}  
+            ul{padding:0;}
+            li{float:left;padding:15px;list-style:none;}
+            img{display:block;clear:both;}
+            P{font-family:monospace;font-size:20px;}
+        </style>
+    </head>
+    <body>
+        <h1>I am so hungry~</h1>
+        <ul>
+            <li><a href="picture/big_shrimp.jpg" title="braised prawns" onclick="showPic(this);return false">big shrimp</a></li>
+            <li><a href="picture/egg_rice.jpg" title="my favorite food" onclick="showPic(this);return false">egg rice</a></li>
+            <li><a href="picture/hot_pot.jpg" title="two flavors hot pot" onclick="showPic(this);return false">hot pot</a></li>
+            <li><a href="picture/red_chop.jpg" title="my grandmo do this good" onclick="showPic(this);return false">red chop</a></li>
+        </ul>
+        <img id="palceholder" src="picture/flower.jpg" title="sanshengsanshi" alt="flower"/>
+        <p id="description">choose an image</p>
+        <script>
+            function showPic(whichpic){
+                var source=whichpic.getAttribute("href");
+                var placeHolder=document.getElementById("palceholder");
+                placeHolder.setAttribute("src",source);
+                var text=whichpic.getAttribute("title");
+                var description=document.getElementById("description");
+                description.firstChild.nodeValue=text;
+            }
+        </script>
+    </body>    
+</html>

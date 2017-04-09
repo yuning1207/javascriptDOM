@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>test</title>
+    </head>
+    <body>
+        <div id="testdiv"></div>
+        <script>
+            window.onload=function()
+            {
+                var para1=document.createElement("p");
+                var para2=document.createElement("em");
+                var txt1=document.createTextNode("this is");
+                var txt2=document.createTextNode(" my ");
+                var txt3=document.createTextNode("content.");
+                var testdiv=document.getElementById("testdiv");
+                testdiv.appendChild(para1);
+                para1.appendChild(txt1);
+                para1.appendChild(para2);
+                para1.appendChild(txt3);
+                para2.appendChild(txt2);
+            }
+        </script>
+    </body>
+</html>

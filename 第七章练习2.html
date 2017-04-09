@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>test</title>
+    </head>
+    <body>
+        <div id="testdiv">
+            <p>this is <em>my</em> content.</p>
+        </div>
+        <script>
+            window.onload=function()
+            {
+                var testdiv=document.getElementById("testdiv");
+                alert(testdiv.innerHTML);
+                testdiv.innerHTML="<p>my name is <em>yuning</em> .</p>";
+                alert(testdiv.innerHTML);
+            }
+        </script>
+    </body>
+</html>

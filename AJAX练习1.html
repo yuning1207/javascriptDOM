@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <span>输入账号</span>
+        <input id="id" type="text" name="name" onkeyup="check()" id="name">
+        <span id="checkresult"></span>
+        <script>
+            function check()
+            {
+                if(document.getElementById("id").value=="abc")
+                {
+                    var request=new XMLHttpRequest;
+                    if(request)
+                    {
+                        request.open("GET","example.txt",true);
+                        request.onreadystatechange=function()
+                        {
+                            if(request.readyState==4&&request.status==200)
+                            {
+                                document.getElementById("checkresult").innerHTML=request.responseText;
+                            }
+                        };
+                    request.send(null);
+                    }
+                    else
+                    {
+                        alert("sorry,you browser doesn\'t support XMLHttpRequest");
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>test</title>
+    </head>
+    <body>
+        <div id="testdiv">
+        </div>
+        <script>
+            /*
+            window.onload=function()
+            {
+                var para=document.createElement("p");
+                var info="nodeName: ";
+                info+=para.nodeName;
+                info+=" nodeType: ";
+                info+=para.nodeType;
+                alert(info);
+            }*/
+            window.onload=function()
+            {
+                /*
+                var para=document.createElement("p");
+                var testdiv=document.getElementById("testdiv");
+                testdiv.appendChild(para);
+                var txt=document.createTextNode("hello world!");
+                para.appendChild(txt);
+                */
+                var para=document.createElement("p");
+                var txt=document.createTextNode("hello world!");
+                para.appendChild(txt);
+                var testdiv=document.getElementById("testdiv");
+                testdiv.appendChild(para);
+                
+            }
+        </script>
+    </body>
+</html>

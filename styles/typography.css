@@ -1,0 +1,22 @@
+body
+{
+    font-family:"Arial",sans-serif;
+    font-size:15pt;
+}
+abbr
+{
+    font-weight:700;
+    font-style:normal;
+}
+dt
+{
+    font-weight:500;
+}
+dd
+{
+    font-size:12pt;
+}
+a
+{
+    font-style:normal;
+}
