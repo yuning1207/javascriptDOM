@@ -1,0 +1,20 @@
+.one
+{
+    background-position:25% 0%;
+}
+.two
+{
+    background-position:50% 0%;
+}
+.three
+{
+    background-position:75% 0%;
+}
+.slideshow
+{
+    width:100px;
+    height:100px;
+    background-image:url(../picture/59.jpg);
+    background-position:0% 0%;
+    overflow:hidden;
+}
